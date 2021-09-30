@@ -20,7 +20,7 @@
 
  <appender name="FILE"
     class="ch.qos.logback.core.rolling.RollingFileAppender">
-    <file>E:\GithubProjects\Logs/rajatrestclient.log</file>
+    <file>E:\GithubProjects\Logs/rajatStrategy.log</file>
     <append>true</append>
     <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
        <Pattern>%d{yyyy-MM-dd_HH:mm:ss.SSS} [%thread] %-5level %class{36}.%M %L - %msg%n
@@ -28,7 +28,7 @@
     </encoder>
 
    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-        <FileNamePattern>E:\GithubProjects\Logs/rajatrestclient.%d{yyyy-MM-dd}.gz</FileNamePattern>
+        <FileNamePattern>E:\GithubProjects\Logs/rajatStrategy.%d{yyyy-MM-dd}.gz</FileNamePattern>
         
     </rollingPolicy>
     
@@ -44,7 +44,7 @@
         <appender-ref ref="FILE"/>
     </root>
 
-    <logger name="com.rajat.mock" level="debug" additivity="false">
+    <logger name="com.rajat.dp" level="debug" additivity="false">
         <appender-ref ref="FILE"/>
     </logger>
     

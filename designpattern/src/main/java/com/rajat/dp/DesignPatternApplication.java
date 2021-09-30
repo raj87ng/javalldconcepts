@@ -1,4 +1,4 @@
-package com.rajat.springrest;
+package com.rajat.dp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
